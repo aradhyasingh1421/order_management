@@ -1,0 +1,13 @@
+git init
+
+git checkout -b feature/schema
+git commit -m "init schema"
+
+git checkout -b feature/seed
+git commit -m "add seed data"
+
+git checkout -b feature/queries
+git commit -m "add queries"
+
+git checkout -b feature/docker
+git commit -m "add docker setup"
