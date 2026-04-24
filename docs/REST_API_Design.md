@@ -1,6 +1,7 @@
 #users
 
 GET /users
+
 Description: Retrieve a list of all users
 Response Status Codes:
 
@@ -8,6 +9,7 @@ Response Status Codes:
 404 → Not Found
 
 GET /users/{id}
+
 Description: Retrieve details of a specific user by ID
 Response Status Codes:
 
@@ -15,6 +17,7 @@ Response Status Codes:
 404 → User Not Found
 
 POST /users
+
 Description: Create a new user
 Response Status Codes:
 
@@ -22,6 +25,7 @@ Response Status Codes:
 400 → Bad Request
 
 PATCH /users/{id}
+
 Description: Update user details
 Response Status Codes:
 
@@ -39,6 +43,7 @@ Response Status Codes:
 #products
 
 get/product
+
 Description: Retrieve all products
 Response Status Codes:
 
@@ -46,6 +51,7 @@ Response Status Codes:
 404 → Not Found
 
 get/products/{id}
+
 Description: Retrieve a specific product
 Response Status Codes:
 
@@ -53,6 +59,7 @@ Response Status Codes:
 404 → Product Not Found
 
 post/products
+
 Description: Add a new product
 Response Status Codes:
 
@@ -60,6 +67,7 @@ Response Status Codes:
 400 → Bad Request
 
 patch/products/{id}
+
 Description: Update product details
 Response Status Codes:
 

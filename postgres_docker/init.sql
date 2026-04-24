@@ -1,4 +1,3 @@
-create database order_management;
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -15,7 +14,7 @@ CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id) ON DELETE CASCADE,
     product_id INT REFERENCES products(id) ON DELETE CASCADE,
-    quantity INT CHECK (quantity > 0),
+    quantity INT CHECK (quantity > 0) NOT NULL,
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

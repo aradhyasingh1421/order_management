@@ -1,13 +1,9 @@
+git --version
+cd C:\revellab_project\order_management
 git init
-
-git checkout -b feature/schema
-git commit -m "init schema"
-
-git checkout -b feature/seed
-git commit -m "add seed data"
-
-git checkout -b feature/queries
-git commit -m "add queries"
-
-git checkout -b feature/docker
-git commit -m "add docker setup"
+git add .
+git commit -m "Initial commit - order management project"
+git remote add origin https://github.com/aradhyasingh1421/order_management
+git branch -M main
+git pull origin main --rebase
+git push -u origin main
